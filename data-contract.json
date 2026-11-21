@@ -104,6 +104,14 @@
         "reason"
       ],
       "row_count": 1
+    },
+    "july_dispatches.csv": {
+      "columns": ["receipt", "notice", "household", "form", "channel", "state", "registered_at"],
+      "row_count": 24
+    },
+    "july_receipts.csv": {
+      "columns": ["receipt", "returned_at", "registered_at", "state", "o1", "n1", "n2"],
+      "row_count": 8
     }
   }
 }
