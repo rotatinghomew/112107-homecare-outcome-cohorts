@@ -1,0 +1,40 @@
+{
+  "project": "居家照护服务随访资料",
+  "data_is_synthetic": true,
+  "encoding": "UTF-8",
+  "files": {
+    "assessments.csv": {
+      "columns": [
+        "assessment_id",
+        "household_id",
+        "assessed_at",
+        "need_level",
+        "instrument_rev",
+        "complete"
+      ],
+      "row_count": 4
+    },
+    "exposure.csv": {
+      "columns": [
+        "event_id",
+        "household_id",
+        "service",
+        "started_at",
+        "ended_at",
+        "intensity"
+      ],
+      "row_count": 4
+    },
+    "followup.csv": {
+      "columns": [
+        "followup_id",
+        "household_id",
+        "due_at",
+        "observed_at",
+        "outcome",
+        "exit_reason"
+      ],
+      "row_count": 3
+    }
+  }
+}

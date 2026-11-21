@@ -1,0 +1,4 @@
+followup_id,household_id,due_at,observed_at,outcome,exit_reason
+F1,H21,2026-04-01,2026-04-03,stable,
+F2,H22,2026-04-20,,,moved_to_facility
+F3,H23,2026-04-15,,,not_due
