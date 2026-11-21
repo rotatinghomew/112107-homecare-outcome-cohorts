@@ -105,6 +105,10 @@
       ],
       "row_count": 1
     },
+    "archive_reports.csv": {
+      "columns": ["report", "period", "published_at", "cutoff", "station", "group", "scope", "households", "barrier_households"],
+      "row_count": 3
+    },
     "july_dispatches.csv": {
       "columns": ["receipt", "notice", "household", "form", "channel", "state", "registered_at"],
       "row_count": 24
