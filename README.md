@@ -1,19 +1,19 @@
-# 居家照护服务方案的分层效果跟踪
+# 居家服务的问卷换版记录
 
-以下资料为合成记录，不含实际个人信息。文件以 UTF-8 编码，普通字段含日期或本地时间（东八区），分号表示同一字段的多值。空值表示在该记录中未提供，不自动当零。表内的凭据编号用于核对记录归属。
+调查对象是服务家庭，样本不含真实个人信息。文件使用 UTF-8，日期采用本地日历（东八区），月份用 `YYYY-MM` 表示。多选值以分号分隔。空白值表示未提供或该项未询问。
 
 ## 数据来源
 
-- `data/strata.csv`：人日成本单位为小时；比例用小数，分层键取三个业务字段的组合。
-- `data/audit_budget.csv`：原批分期可用人时，预留给临期联络的部分不得用于普通抽取；名单标志确定临期对象。
-- `data/audit_order_log.csv`：已签发的外勤指令和抽签依据，evidence_kind 区分业务优先与概率抽核。
-- `data/previous_draw.csv`：历史在样资格人数、抽核数及抽签凭证，抽签时名单通过冻结日期关联。
-- `data/audits.csv`：firsthand 与 secondhand 保持不同证据依据；adjudication 由值班负责人签发。
-- `data/remedial_service.csv`：原先服务周期结束后发生的实际补办，修订用于核对再次办理状态。
-- `data/releases.csv`：已经签发的结论使用的日期及渠道。
-- `data/roster.csv`：原始转介包含同一家庭的重复登记。以 person 和 wave 区分统计对象；due_at 是原服务约定期限。
-- `data/original_contacts.csv`：常规凭据仅报告原期限内的结果，unknown 表示不能凭常规凭据确定。
+- `data/roster.csv`：每期调查家庭名册；`channel` 表示登记时可用的访谈与自填渠道。
+- `data/invitations.csv`：按 `issue` 记录家庭和调查月份，区分原先分配次序和实际送发次序；`design` 标明随机试填或常规收发。
+- `data/replies.csv`：现场采录的答卷与收到日期。`actual_order` 是收发台登记的次序，未回收不另填答卷。
+- `data/forms.csv`：各版本的题义、选项和询问范围，联络及时段为本期指标的两类障碍。
+- `data/permissions.csv`：该期成对关联权限及单份使用权；登记与生效可能不同日。
+- `data/corrections.csv`：收发台对原登记次序的更正，更正的是答卷出示次序而非原分配。
+- `data/criteria.csv`：最少成对份数，允许的换版偏差、次序效应和未明比例上限；后三项都以比例表示。`close_at` 为六月回收期限。
+- `data/capacity.csv`：下期访谈总小时、每份各版访谈分钟数及能接收通知的自填份数上限。
+- `data/notices.csv`：主管已签的下期安排，每行包含签发时使用的资料截至日、两版计划份数、办理进度与公报序列口径。
 
 ## 环境及检查
 
-使用 Python 3.11.2 标准库，无需网络或额外安装。在项目目录可执行 `python3 -m unittest discover -s tests -v` 核对输入文件、表头与记录形状。各来源字段及记录数量见 `data-contract.json`。目前提供资料读取检查，不生成业务分析结果。
+使用 Python 3.11.2 标准库，无需网络或额外安装。执行 `python3 -m unittest discover -s tests -v` 检查调查资料能否按 `data-contract.json` 读取。项目当前只提供源资料和格式检查。

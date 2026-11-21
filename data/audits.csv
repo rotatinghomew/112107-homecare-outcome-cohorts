@@ -1,7 +1,0 @@
-evidence,audit_id,case,logged_at,finding,authority,replaces
-X1,A01,H01,2026-05-07,not_fulfilled,firsthand,
-X2,A02,H02,2026-05-06,refused,firsthand,
-X3,A03,H03,2026-05-05,not_fulfilled,firsthand,
-X4,A04,H04,2026-05-09,fulfilled,firsthand,
-X5,A04,H04,2026-05-10,not_fulfilled,secondhand,
-X6,A04,H04,2026-06-05,not_fulfilled,adjudication,X5

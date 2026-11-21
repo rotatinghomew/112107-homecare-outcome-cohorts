@@ -2,110 +2,108 @@
   "data_is_synthetic": true,
   "timezone": "Asia/Shanghai",
   "files": {
-    "strata.csv": {
-      "columns": [
-        "district",
-        "service_mix",
-        "contact",
-        "hours_per_audit",
-        "minimum_draw",
-        "max_width",
-        "max_unresolved_share"
-      ],
-      "row_count": 4
-    },
-    "audit_budget.csv": {
-      "columns": [
-        "wave",
-        "opens",
-        "closes",
-        "total_hours",
-        "urgent_hours",
-        "confidence"
-      ],
-      "row_count": 2
-    },
-    "audit_order_log.csv": {
-      "columns": [
-        "audit_id",
-        "case",
-        "wave",
-        "evidence_kind",
-        "assigned_at",
-        "worker",
-        "draw_document"
-      ],
-      "row_count": 5
-    },
-    "previous_draw.csv": {
-      "columns": [
-        "draw_document",
-        "wave",
-        "district",
-        "service_mix",
-        "contact",
-        "freeze_at",
-        "frame_size",
-        "draw_n",
-        "seed"
-      ],
-      "row_count": 1
-    },
-    "audits.csv": {
-      "columns": [
-        "evidence",
-        "audit_id",
-        "case",
-        "logged_at",
-        "finding",
-        "authority",
-        "replaces"
-      ],
-      "row_count": 6
-    },
-    "remedial_service.csv": {
-      "columns": [
-        "service",
-        "case",
-        "opened_at",
-        "completed_at",
-        "origin"
-      ],
-      "row_count": 2
-    },
-    "releases.csv": {
-      "columns": [
-        "release",
-        "wave",
-        "cutoff",
-        "issued_at",
-        "recipient"
-      ],
-      "row_count": 1
-    },
     "roster.csv": {
       "columns": [
-        "case",
-        "person",
-        "wave",
-        "district",
-        "service_mix",
-        "contact",
-        "due_at",
-        "urgent",
-        "recorded_at"
+        "household",
+        "station",
+        "group",
+        "channel",
+        "month"
       ],
-      "row_count": 249
+      "row_count": 480
     },
-    "original_contacts.csv": {
+    "invitations.csv": {
       "columns": [
-        "call",
-        "case",
-        "recorded_at",
-        "outcome",
-        "source"
+        "issue",
+        "household",
+        "month",
+        "assigned_first",
+        "sent_first",
+        "sent_second",
+        "reason",
+        "sent_at",
+        "design"
       ],
-      "row_count": 248
+      "row_count": 480
+    },
+    "replies.csv": {
+      "columns": [
+        "issue",
+        "form",
+        "actual_order",
+        "received_at",
+        "state",
+        "o1",
+        "n1",
+        "n2"
+      ],
+      "row_count": 589
+    },
+    "permissions.csv": {
+      "columns": [
+        "issue",
+        "decision",
+        "effective_at",
+        "registered_at",
+        "single_use"
+      ],
+      "row_count": 182
+    },
+    "forms.csv": {
+      "columns": [
+        "form",
+        "item",
+        "meaning",
+        "asked_if",
+        "options"
+      ],
+      "row_count": 3
+    },
+    "criteria.csv": {
+      "columns": [
+        "policy",
+        "min_pairs",
+        "max_bias",
+        "max_order_effect",
+        "max_unresolved",
+        "close_at"
+      ],
+      "row_count": 1
+    },
+    "capacity.csv": {
+      "columns": [
+        "station",
+        "month",
+        "interview_hours",
+        "minutes_original",
+        "minutes_new",
+        "self_service_limit"
+      ],
+      "row_count": 3
+    },
+    "notices.csv": {
+      "columns": [
+        "notice",
+        "station",
+        "group",
+        "cutoff",
+        "month",
+        "agreed_original",
+        "agreed_new",
+        "applied_state",
+        "report_series"
+      ],
+      "row_count": 3
+    },
+    "corrections.csv": {
+      "columns": [
+        "correction",
+        "issue",
+        "registered_at",
+        "actual_first",
+        "reason"
+      ],
+      "row_count": 1
     }
   }
 }

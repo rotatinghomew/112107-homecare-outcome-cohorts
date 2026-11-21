@@ -1,0 +1,4 @@
+notice,station,group,cutoff,month,agreed_original,agreed_new,applied_state,report_series
+N1,河东,日常协助,2026-07-01,2026-07,8,24,已约访谈,继续
+N2,新桥,持续照护,2026-07-01,2026-07,8,24,拟切换未执行,继续
+N3,北苑,持续照护,2026-07-01,2026-07,12,0,已约访谈,单列
