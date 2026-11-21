@@ -1,40 +1,111 @@
 {
-  "project": "居家照护服务随访资料",
   "data_is_synthetic": true,
-  "encoding": "UTF-8",
+  "timezone": "Asia/Shanghai",
   "files": {
-    "assessments.csv": {
+    "strata.csv": {
       "columns": [
-        "assessment_id",
-        "household_id",
-        "assessed_at",
-        "need_level",
-        "instrument_rev",
-        "complete"
+        "district",
+        "service_mix",
+        "contact",
+        "hours_per_audit",
+        "minimum_draw",
+        "max_width",
+        "max_unresolved_share"
       ],
       "row_count": 4
     },
-    "exposure.csv": {
+    "audit_budget.csv": {
       "columns": [
-        "event_id",
-        "household_id",
+        "wave",
+        "opens",
+        "closes",
+        "total_hours",
+        "urgent_hours",
+        "confidence"
+      ],
+      "row_count": 2
+    },
+    "audit_order_log.csv": {
+      "columns": [
+        "audit_id",
+        "case",
+        "wave",
+        "evidence_kind",
+        "assigned_at",
+        "worker",
+        "draw_document"
+      ],
+      "row_count": 5
+    },
+    "previous_draw.csv": {
+      "columns": [
+        "draw_document",
+        "wave",
+        "district",
+        "service_mix",
+        "contact",
+        "freeze_at",
+        "frame_size",
+        "draw_n",
+        "seed"
+      ],
+      "row_count": 1
+    },
+    "audits.csv": {
+      "columns": [
+        "evidence",
+        "audit_id",
+        "case",
+        "logged_at",
+        "finding",
+        "authority",
+        "replaces"
+      ],
+      "row_count": 6
+    },
+    "remedial_service.csv": {
+      "columns": [
         "service",
-        "started_at",
-        "ended_at",
-        "intensity"
+        "case",
+        "opened_at",
+        "completed_at",
+        "origin"
       ],
-      "row_count": 4
+      "row_count": 2
     },
-    "followup.csv": {
+    "releases.csv": {
       "columns": [
-        "followup_id",
-        "household_id",
-        "due_at",
-        "observed_at",
-        "outcome",
-        "exit_reason"
+        "release",
+        "wave",
+        "cutoff",
+        "issued_at",
+        "recipient"
       ],
-      "row_count": 3
+      "row_count": 1
+    },
+    "roster.csv": {
+      "columns": [
+        "case",
+        "person",
+        "wave",
+        "district",
+        "service_mix",
+        "contact",
+        "due_at",
+        "urgent",
+        "recorded_at"
+      ],
+      "row_count": 249
+    },
+    "original_contacts.csv": {
+      "columns": [
+        "call",
+        "case",
+        "recorded_at",
+        "outcome",
+        "source"
+      ],
+      "row_count": 248
     }
   }
 }

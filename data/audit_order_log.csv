@@ -1,0 +1,6 @@
+audit_id,case,wave,evidence_kind,assigned_at,worker,draw_document
+A01,H01,APR,probability,2026-05-04,F1,LOT-2026-05
+A02,H02,APR,probability,2026-05-04,F2,LOT-2026-05
+A03,H03,APR,urgent,2026-05-03,F4,
+A04,H04,APR,probability,2026-05-04,F1,LOT-2026-05
+A05,H06,APR,probability,2026-05-04,F3,LOT-2026-05

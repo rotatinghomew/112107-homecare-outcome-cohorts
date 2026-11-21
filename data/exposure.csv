@@ -1,5 +1,0 @@
-event_id,household_id,service,started_at,ended_at,intensity
-E1,H21,visit,2026-01-10,,weekly
-E2,H21,rehab_support,2026-02-02,,monthly
-E3,H22,visit,2026-02-01,2026-03-01,weekly
-E4,H23,bathing,2026-02-15,,monthly

@@ -1,5 +1,0 @@
-assessment_id,household_id,assessed_at,need_level,instrument_rev,complete
-A1,H21,2026-01-03,high,v1,yes
-A2,H21,2026-04-03,medium,v1,yes
-A3,H22,2026-01-20,high,v1,yes
-A4,H23,2026-02-02,low,v2,partial
