@@ -1,0 +1,4 @@
+station,month,capacity_minutes,capacity_hours,interview_only_households,dual_channel_households,max_original_interviews_stationwide,equal_split_original_per_group,self_service_limit,self_service_used_so_far,booked_interview_minutes,booked_interview_hours,remaining_bookable_minutes,full_new_interview_minutes,full_new_self_forms,full_new_capacity_ok,full_original_station_minutes,full_original_station_capacity_ok,coordinated_plan_minutes,coordinated_plan_self_forms,coordinated_plan_capacity_ok,failing_groups
+河东,2026-07,660,11,16,64,50,25,65,4,104,1.73,556,96,64,是,1040,否,568,32,是,1
+新桥,2026-07,840,14,16,64,56,28,80,0,0,0,840,112,64,是,1200,否,656,32,是,1
+北苑,2026-07,480,8,16,64,34,17,70,0,168,2.8,312,80,64,是,1120,否,1120,0,否,2

@@ -1,0 +1,7 @@
+station,group,notice,notice_cutoff,applied_state,report_series,current_comparable,full_switch_allowed,full_group_channel_ready,at_cutoff_comparable,post_signing_permission_or_order_events,policy_reasons,decision,recommended_original_interviews,recommended_new_interviews,recommended_new_self_forms,recommended_plan_total_forms,restart_new_series_original_interviews,restart_new_series_new_interviews,restart_new_series_self_forms,station_coordinated_capacity_ok,station_capacity_minutes,coordinated_plan_minutes,already_booked_notice_minutes,unissued_new_forms_to_suspend,suspend_unissued_switch_for_review,trend_commitment_review,trend_promise_supported
+北苑,持续照护,N3,2026-07-01,已约访谈,单列,否,否,是,否,0,换版偏差0.1200>0.09,口径不可比且访谈能力不足以原版覆盖全组：可维持均分的同口径可覆盖范围，或明确从本期重开序列,17,0,23,40,0,8,32,否,480,1120,168,0,否,已明确单列/重开序列，不承诺旧趋势,是
+北苑,日常协助,,,,,否,否,是,,0,次序效应0.3833>0.10,口径不可比且访谈能力不足以原版覆盖全组：可维持均分的同口径可覆盖范围，或明确从本期重开序列,17,0,23,40,0,8,32,否,480,1120,0,0,否,未签趋势口径,否
+新桥,持续照护,N2,2026-07-01,拟切换未执行,继续,是,是,是,是,1,成对支持量、换版偏差、次序效应和未明比例均在政策限内,可签发整组新版并承诺趋势连续,0,8,32,40,0,8,32,是,840,656,0,0,否,发布单承诺继续；当前证据支持,是
+新桥,日常协助,,,,,否,否,是,,0,次序效应0.3538>0.10,口径不可比：若要承诺全组不断，下一轮应对全组保留原版访谈；也可双轨或明确重开序列,40,0,0,40,0,8,32,是,840,656,0,0,否,未签趋势口径,否
+河东,持续照护,,,,,是,是,是,,0,成对支持量、换版偏差、次序效应和未明比例均在政策限内,可签发整组新版并承诺趋势连续,0,8,32,40,0,8,32,是,660,568,0,0,否,未签趋势口径,是
+河东,日常协助,N1,2026-07-01,已约访谈,继续,否,否,是,否,1,换版偏差0.0952>0.09,口径不可比：若要承诺全组不断，下一轮应对全组保留原版访谈；也可双轨或明确重开序列,40,0,0,40,0,8,32,是,660,568,104,20,是,发布单写继续，但当前证据不足，不得对外承诺全组趋势,否

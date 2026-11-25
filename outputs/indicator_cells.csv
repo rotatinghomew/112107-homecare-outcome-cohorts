@@ -1,0 +1,7 @@
+station,group,month,district_weight,dual_channel_households,interview_only_households,households,known_target_households,barrier_households,no_barrier_households,other_reason_households,refused_households,missing_households,unresolved_answer_households,unavailable_households,barrier_rate,unresolved_rate,response_rate,lower_bound_all_assigned,upper_bound_all_assigned
+北苑,持续照护,2026-06,0.166667,32,8,40,35,13,22,0,2,3,0,5,0.371429,0.125,0.875,0.325,0.45
+北苑,日常协助,2026-06,0.166667,32,8,40,35,10,25,0,2,3,0,5,0.285714,0.125,0.875,0.25,0.375
+新桥,持续照护,2026-06,0.166667,32,8,40,35,16,19,0,2,3,0,5,0.457143,0.125,0.875,0.4,0.525
+新桥,日常协助,2026-06,0.166667,32,8,40,35,8,27,0,2,3,0,5,0.228571,0.125,0.875,0.2,0.325
+河东,持续照护,2026-06,0.166667,32,8,40,35,20,15,0,2,3,0,5,0.571429,0.125,0.875,0.5,0.625
+河东,日常协助,2026-06,0.166667,32,8,40,35,15,20,0,2,3,0,5,0.428571,0.125,0.875,0.375,0.5
